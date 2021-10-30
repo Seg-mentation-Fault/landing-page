@@ -1,23 +1,33 @@
-# Serverless Pre-Rendering Demo
+# github pages theme    
 
-![Screenshot](https://assets.vercel.com/image/upload/v1556881767/front/blog/serverless-prerendering/screenshot.png)
+### DEMO is [here](https://nordicgiant2.github.io/gh-pages-theme-page/)
 
-<div align="center">
-<a href="https://vercel.com/blog/serverless-pre-rendering">Read the blog post</a>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<a href="https://spr-landing.zeit.sh">Checkout the demo</a>
-</div>
+![img](https://github.com/nordicgiant2/gh-pages-theme/blob/master/image/01.jpg?raw=true)
 
-## Developing
+# About [`particles-bg`](https://github.com/lindelof/particles-bg) library
+#### This project uses the react particle background component library [https://github.com/lindelof/particles-bg](https://github.com/lindelof/particles-bg). It's very simple. Anyone can be a Musketeer with it.
 
-By default, the content on the site is based off our [public Notion page](https://www.notion.so/vercel/My-SPR-Site-1a86e7f6d6a54537a2e515650c1888b8).
+![img](https://github.com/lindelof/particles-bg/raw/master/image/02.jpg?raw=true)
 
-To edit and create content through your own Notion page, [sign up for Notion](https://www.notion.so/signup), and update the `PAGE_ID` environment variable with your page ID.
+## About gh-pages
+About gh-pages you can check here for more information. [https://pages.github.com/](https://pages.github.com/).
 
-## Deploying
+## Run Project
+### 1. Clone the project
+```
+git clone https://github.com/nordicgiant2/gh-pages-theme
+```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fspr-landing&env=PAGE_ID)
+### 2. Run the project
+```shell
+npm i
+npm start
+```
 
-## More Examples
+### 3. Build
+```shell
+npm run build
+```
 
-- [Notion Blog](https://github.com/ijjk/notion-blog)
+## License
+This project is licensed under the MIT License. 

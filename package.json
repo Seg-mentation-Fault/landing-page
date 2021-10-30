@@ -1,28 +1,40 @@
 {
-  "name": "spr-landing",
-  "version": "1.0.0",
-  "repository": "https://github.com/vercel/spr-landing",
-  "license": "MIT",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
+  "name": "hellos",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
   "dependencies": {
-    "color": "^3.1.3",
-    "next": "^11.1.1",
-    "node-fetch": "^2.6.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.1.2",
+    "normalize.css": "^8.0.1",
+    "particles-bg": "^2.4.1",
+    "prism-react-renderer": "^1.0.2",
+    "react": "^16.12.0",
+    "react-awesome-button": "^6.3.1",
+    "react-dom": "^16.12.0",
+    "react-parallax": "^3.0.0",
+    "react-scripts": "3.4.0"
   },
-  "devDependencies": {
-    "@types/node": "^14.14.9",
-    "@types/react": "^17.0.0",
-    "prettier": "^2.2.0",
-    "typescript": "^4.1.2"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
