@@ -29,7 +29,7 @@ $headers .= "Reply-To: mariano@desarrolloweb.com\r\n";
 $headers .= "Return-path: holahola@desarrolloweb.com\r\n"; 
 
 //direcciones que recibián copia 
-$headers .= "Cc: maria@desarrolloweb.com\r\n"; 
+$headers .= "Cc: jdcera4@gmail.com\r\n"; 
 
 //direcciones que recibirán copia oculta 
 $headers .= "Bcc: pepe@pepe.com,juan@juan.com\r\n"; 
