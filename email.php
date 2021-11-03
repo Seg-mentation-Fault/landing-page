@@ -1,7 +1,7 @@
 <?php
 $mail = $_POST['email'];
 
-$header = 'From: ' . $mail . " \r\n";
+$header = 'From: ' . "jdcera4@gmail.com" . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
