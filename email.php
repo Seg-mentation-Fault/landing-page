@@ -1,19 +1,38 @@
-<?php
-$mail = $_POST['email'];
+<?php 
+$destinatario = "jdcera4@gmail.com"; 
+$asunto = "Este mensaje es de prueba"; 
+$cuerpo = ' 
+<html> 
+<head> 
+   <title>Prueba de correo</title> 
+</head> 
+<body> 
+<h1>Hola amigos!</h1> 
+<p> 
+<b>Bienvenidos a mi correo electrónico de prueba</b>. Estoy encantado de tener tantos lectores. Este cuerpo del mensaje es del artículo de envío de mails por PHP. Habría que cambiarlo para poner tu propio cuerpo. Por cierto, cambia también las cabeceras del mensaje. 
+</p> 
+</body> 
+</html> 
+'; 
 
-$header = 'From: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+//para el envío en formato HTML 
+$headers = "MIME-Version: 1.0\r\n"; 
+$headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
 
-$mensaje .= "Seras informado con la nueva informacion sobre nuestra aplicacion " " \r\n";
-$mensaje .= "Mantente antento sobre los nuevos cambios"" \r\n";
-$mensaje .= "Enviado el " . date('d/m/Y', time());
+//dirección del remitente 
+$headers .= "From: Miguel Angel Alvarez <pepito@desarrolloweb.com>\r\n"; 
 
-$para = 'jdcera4@gmail.com';
-$asunto = 'Mensaje de mi sitio web';
+//dirección de respuesta, si queremos que sea distinta que la del remitente 
+$headers .= "Reply-To: mariano@desarrolloweb.com\r\n"; 
 
-mail($email, $asunto, utf8_decode($mensaje), $header);
+//ruta del mensaje desde origen a destino 
+$headers .= "Return-path: holahola@desarrolloweb.com\r\n"; 
 
-header("Location:index.html");
+//direcciones que recibián copia 
+$headers .= "Cc: maria@desarrolloweb.com\r\n"; 
+
+//direcciones que recibirán copia oculta 
+$headers .= "Bcc: pepe@pepe.com,juan@juan.com\r\n"; 
+
+mail($destinatario,$asunto,$cuerpo,$headers) 
 ?>
