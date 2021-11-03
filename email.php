@@ -10,7 +10,6 @@ $mensaje .= "Seras informado con la nueva informacion sobre nuestra aplicacion "
 $mensaje .= "Mantente antento sobre los nuevos cambios"" \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'ignaciobluuweb@gmail.com';
 $asunto = 'Mensaje de mi sitio web';
 
 mail($email, $asunto, utf8_decode($mensaje), $header);
